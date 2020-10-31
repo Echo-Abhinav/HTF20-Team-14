@@ -11,7 +11,6 @@ import Login from "./Login";
 import { auth } from "./firebase";
 import {login, logout} from './features/counter/userSlice';
 
-
 function App() {
   const dispatch= useDispatch();
   const user =  useSelector(selectUser);

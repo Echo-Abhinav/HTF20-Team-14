@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+
 var firebaseConfig = {
     apiKey: "AIzaSyC3UoGJN6yZWUDFlGsvV09BEE1_TGdUag0",
     authDomain: "triber-d6380.firebaseapp.com",
