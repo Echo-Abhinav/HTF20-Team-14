@@ -1,19 +1,21 @@
-import React,{useEffect} from 'react';
+import { React, useEffect } from 'react';
 import logo from './logo.svg';
 import userSlice from './features/counter/userSlice';
 import appSlice from './features/counter/appSlice';
 import './App.css';
 import Sidebar from './Sidebar';
 import Chat from './Chat';
-import {selectUser} from './features/counter/userSlice';
-import { useDispatch,useSelector } from 'react-redux';
+import { selectUser } from './features/counter/userSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import Login from "./Login";
 import { auth } from "./firebase";
 import {login, logout} from './features/counter/userSlice';
 
 function App() {
-  const dispatch= useDispatch();
+
+  const dispatch = useDispatch();
   const user =  useSelector(selectUser);
+
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       console.log("user is ", authUser);

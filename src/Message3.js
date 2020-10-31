@@ -8,10 +8,12 @@ function Message({ timestamp, user, message }) {
             <Avatar />
             <div className="message__info">
                 <h4>
-                    Aadish
+                    Rahul
+                    <span className="message__timestamp">
+                    </span>
                 </h4>
 
-                <p>Hello !!</p>
+                <p>Hello everyone!!</p>
             </div>
             
         </div>
